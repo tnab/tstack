@@ -1,9 +1,9 @@
 ---
-name: tstack-catchup
+name: catchup
 description: Reconstruct where a topic or project stands as of a specified date and what changed since a prior update. Use for catch-ups, returning to work, status refreshes, and concise handoffs grounded in available records.
 ---
 
-# tstack catchup
+# Catch-up
 
 Read and apply the [shared principles](../../references/principles.md) first.
 
@@ -15,7 +15,7 @@ Identify the topic, project, relevant time window, and as-of date. Use the user'
 
 Start from supplied context and artifacts. A usable handoff can eliminate history reconstruction. Access conversation history only when relevant and within the user's requested scope; do not mine unrelated projects, accounts, or transcripts. Discover available tools rather than assuming a particular application's storage paths.
 
-Use [tstack-search](../tstack-search/SKILL.md) only for a missing fact or current-state check that the task requires and permits. Give it the topic, dates, source restrictions, and exact gap. A request to summarize supplied records does not automatically authorize broadening the corpus. State unavailable evidence and continue with what is known.
+Use [search](../search/SKILL.md) only for a missing fact or current-state check that the task requires and permits. Give it the topic, dates, source restrictions, and exact gap. A request to summarize supplied records does not automatically authorize broadening the corpus. State unavailable evidence and continue with what is known.
 
 ## Establish change and current state
 
@@ -33,4 +33,4 @@ Lead with a short current-state summary and as-of date. Follow with the material
 
 Cite consequential statuses and changes. For recorded commitments, preserve explicit owners and due dates and check for completion or cancellation. Mark missing ownership or timing as unspecified. Separate suggested next steps from existing commitments; this brief does not send messages or update trackers.
 
-Include any coverage limit that could change the reader's next move. Check that completed items are not presented as open and that stale evidence is not labeled current. Apply [tstack-write](../tstack-write/SKILL.md) before delivering the handoff.
+Include any coverage limit that could change the reader's next move. Check that completed items are not presented as open and that stale evidence is not labeled current. Apply [write](../write/SKILL.md) before delivering the handoff.

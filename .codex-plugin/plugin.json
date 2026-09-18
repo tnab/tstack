@@ -1,6 +1,6 @@
 {
   "name": "tstack",
-  "version": "0.2.0-alpha.1",
+  "version": "0.2.0-alpha.2",
   "description": "Portable skills for research, briefs, meetings, follow-ups, decisions, review, and clear writing.",
   "author": {
     "name": "tnab",
@@ -15,9 +15,9 @@
     "category": "Productivity",
     "capabilities": [],
     "defaultPrompt": [
-      "Use $tstack-brief to synthesize this packet with sources.",
-      "Use $tstack-meeting to capture decisions and actions.",
-      "Use $tstack-review to check this memo against its evidence."
+      "Use $brief to synthesize this packet with sources.",
+      "Use $meeting to capture decisions and actions.",
+      "Use $review to check this memo against its evidence."
     ]
   },
   "repository": "https://github.com/tnab/tstack",

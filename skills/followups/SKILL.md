@@ -1,13 +1,13 @@
 ---
-name: tstack-followups
+name: followups
 description: Find and reconcile outstanding commitments across meeting notes, documents, messages, and task records. Use to identify open actions, owners, deadlines, blockers, and completion evidence, or to update an existing action register when authorized.
 ---
 
-# tstack follow-ups
+# Follow-ups
 
 Read and apply the [shared principles](../../references/principles.md) first.
 
-Establish the topic, people, source scope, and cutoff date. Reuse supplied evidence and any existing action register. Use [tstack-search](../tstack-search/SKILL.md) only for material gaps or status checks within that scope. Do not scan unrelated personal history or expand a bounded review into a workspace audit.
+Establish the topic, people, source scope, and cutoff date. Reuse supplied evidence and any existing action register. Use [search](../search/SKILL.md) only for material gaps or status checks within that scope. Do not scan unrelated personal history or expand a bounded review into a workspace audit.
 
 ## Identify commitments
 
@@ -31,4 +31,4 @@ Return a compact list or table with action, owner, due date, status, and source.
 
 Update an existing register only within explicit authorization. Preserve its IDs and unrelated fields; reconcile before adding rows. On a retry, reread the current register and apply only missing changes so repeated runs do not duplicate items. Inspect the saved result and verify changed statuses against their evidence.
 
-Finish through [tstack-write](../tstack-write/SKILL.md). Do not automatically send reminders, assign work, create tasks, or schedule future checks. Those are separate actions requiring user authorization.
+Finish through [write](../write/SKILL.md). Do not automatically send reminders, assign work, create tasks, or schedule future checks. Those are separate actions requiring user authorization.

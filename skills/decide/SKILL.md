@@ -1,9 +1,9 @@
 ---
-name: tstack-decide
+name: decide
 description: Build a decision memo or compare a concrete choice using evidence, constraints, alternatives, and tradeoffs. Use when asked to recommend a course of action or document a decision and its rationale.
 ---
 
-# tstack decide
+# Decide
 
 First read [shared principles](../../references/principles.md). Produce a recommendation the reader can evaluate, or an accurate record of a decision already made.
 
@@ -17,7 +17,7 @@ Determine whether the task is to propose a decision or record an existing one. F
 
 ## Compare credible options
 
-Read the supplied material and its supporting evidence. Use [tstack search](../tstack-search/SKILL.md) only when additional research is needed and within the user's permitted sources. A supplied-only corpus remains the boundary. Mark unavailable evidence that could change the choice.
+Read the supplied material and its supporting evidence. Use [search](../search/SKILL.md) only when additional research is needed and within the user's permitted sources. A supplied-only corpus remains the boundary. Mark unavailable evidence that could change the choice.
 
 Compare materially different, feasible alternatives against the same criteria. Include continuing the current approach, deferring, or running a smaller experiment when credible. Do not manufacture options to reach a fixed count. If constraints leave one viable choice, explain which constraints eliminate the others.
 
@@ -33,4 +33,4 @@ Keep a proposed recommendation visibly separate from an authorized decision. Rec
 
 State observable revisit conditions where useful: a changed assumption, missed threshold, new evidence, or review date supported by the context. Before delivery, check that citations support consequential claims, calculations are reproducible, and the recommendation follows from the stated criteria.
 
-Finish the prose with [tstack write](../tstack-write/SKILL.md), preserving conditional language, dissent, and decision status.
+Finish the prose with [write](../write/SKILL.md), preserving conditional language, dissent, and decision status.

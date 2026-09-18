@@ -22,14 +22,14 @@ The upstream revision and Lauren's MIT copyright notice are recorded in [THIRD_P
 
 | Skill | Purpose |
 |---|---|
-| [tstack-search](skills/tstack-search/SKILL.md) | Find documents, reconstruct decisions, check current plans, and answer questions across available sources. Return evidence, relevant gaps, and unresolved follow-ups. |
-| [tstack-write](skills/tstack-write/SKILL.md) | Draft or edit prose to be direct, succinct, and natural. Remove AI tells without changing facts, uncertainty, attribution, or commitments. |
-| [tstack-brief](skills/tstack-brief/SKILL.md) | Synthesize a document packet into a sourced brief, preserving disagreements and coverage limits. |
-| [tstack-review](skills/tstack-review/SKILL.md) | Find consequential factual, logical, numerical, and practical problems in a document or plan. |
-| [tstack-meeting](skills/tstack-meeting/SKILL.md) | Prepare a focused meeting or produce notes that distinguish discussion, decisions, and commitments. |
-| [tstack-followups](skills/tstack-followups/SKILL.md) | Reconcile outstanding actions, owners, dates, blockers, and completion evidence across records. |
-| [tstack-decide](skills/tstack-decide/SKILL.md) | Compare credible options and write a recommendation or an accurate decision record. |
-| [tstack-catchup](skills/tstack-catchup/SKILL.md) | Reconstruct current state and meaningful changes since a prior update. |
+| [search](skills/search/SKILL.md) | Find documents, reconstruct decisions, check current plans, and answer questions across available sources. Return evidence, relevant gaps, and unresolved follow-ups. |
+| [write](skills/write/SKILL.md) | Draft or edit prose to be direct, succinct, and natural. Remove AI tells without changing facts, uncertainty, attribution, or commitments. |
+| [brief](skills/brief/SKILL.md) | Synthesize a document packet into a sourced brief, preserving disagreements and coverage limits. |
+| [review](skills/review/SKILL.md) | Find consequential factual, logical, numerical, and practical problems in a document or plan. |
+| [meeting](skills/meeting/SKILL.md) | Prepare a focused meeting or produce notes that distinguish discussion, decisions, and commitments. |
+| [followups](skills/followups/SKILL.md) | Reconcile outstanding actions, owners, dates, blockers, and completion evidence across records. |
+| [decide](skills/decide/SKILL.md) | Compare credible options and write a recommendation or an accurate decision record. |
+| [catchup](skills/catchup/SKILL.md) | Reconstruct current state and meaningful changes since a prior update. |
 
 Every skill explicitly loads the [shared principles](references/principles.md). Output-producing workflows finish through the writing skill. These instructions guide the agent; they are not a global output filter.
 
@@ -52,20 +52,20 @@ git clone https://github.com/tnab/tstack.git
 cd tstack
 ```
 
-Ask your agent to read and follow `skills/tstack-search/SKILL.md` or `skills/tstack-write/SKILL.md`, or install them through its supported skill workflow. Keep the full `skills/` and `references/` directories together. The skills share principles and refer to one another; copying a single `SKILL.md` omits dependencies.
+Ask your agent to read and follow `skills/search/SKILL.md` or `skills/write/SKILL.md`, or install them through its supported skill workflow. Keep the full `skills/` and `references/` directories together. The skills share principles and refer to one another; copying a single `SKILL.md` omits dependencies.
 
 Example requests after loading the relevant skill:
 
 ```text
-Use tstack-search to find why we chose this approach, with sources.
-Use tstack-search to find the current plan and unresolved follow-ups.
-Use tstack-brief to summarize this packet for the operations lead, with sources.
-Use tstack-meeting to turn this transcript into decisions and actions.
-Use tstack-followups to reconcile these notes with our action register.
-Use tstack-decide to compare these options against our constraints.
-Use tstack-review to check this memo against the source material.
-Use tstack-catchup to explain what changed since my last update.
-Use tstack-write to tighten this memo while preserving its facts and caveats.
+Use the search skill to find why we chose this approach, with sources.
+Use the search skill to find the current plan and unresolved follow-ups.
+Use the brief skill to summarize this packet for the operations lead, with sources.
+Use the meeting skill to turn this transcript into decisions and actions.
+Use the followups skill to reconcile these notes with our action register.
+Use the decide skill to compare these options against our constraints.
+Use the review skill to check this memo against the source material.
+Use the catchup skill to explain what changed since my last update.
+Use the write skill to tighten this memo while preserving its facts and caveats.
 ```
 
 ### Cursor

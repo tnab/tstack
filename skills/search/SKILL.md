@@ -1,9 +1,9 @@
 ---
-name: tstack-search
+name: search
 description: Find documents or answer work questions across available code, Notion, Slack, Drive, and other work sources. Use for decisions, rationale, current plans, ownership, and cross-source research; return concise answers with evidence and relevant gaps.
 ---
 
-# tstack search
+# Search
 
 Read and apply the [shared principles](../../references/principles.md) before working.
 
@@ -47,4 +47,4 @@ Keep a normal answer to a few paragraphs or useful bullets. Add only the support
 
 When the evidence exposes a relevant open follow-up, flag it briefly with its source. Preserve an explicit owner and due date; label missing values as unassigned or unspecified. Check for completion before calling an item open. Distinguish your suggested next step from someone else's recorded commitment.
 
-Apply [tstack write](../tstack-write/SKILL.md) before delivery. Preserve citations, uncertainty, dates, and commitments during the edit.
+Apply [write](../write/SKILL.md) before delivery. Preserve citations, uncertainty, dates, and commitments during the edit.

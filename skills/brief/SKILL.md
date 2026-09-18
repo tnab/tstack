@@ -1,9 +1,9 @@
 ---
-name: tstack-brief
+name: brief
 description: Synthesize documents and other supplied evidence into a concise, sourced brief for a specific audience or question. Use for reading packets, research summaries, and cross-document synthesis with disagreements and gaps intact.
 ---
 
-# tstack brief
+# Brief
 
 Read and apply the [shared principles](../../references/principles.md) first.
 
@@ -13,7 +13,7 @@ Turn the available record into an answer the reader can use. Organize around the
 
 Identify the audience, the question they need answered, requested length, and any decision the brief should inform. Infer these from the request when clear. Ask only when a missing detail would materially change the result.
 
-Establish the corpus and cutoff date. For supplied documents, stay within that corpus unless the user requests broader research. Use [tstack-search](../tstack-search/SKILL.md) only to fill a material evidence gap when searching is within scope; give it the specific question and limits. Otherwise name the gap. Do not expand the assignment merely because a document contains links.
+Establish the corpus and cutoff date. For supplied documents, stay within that corpus unless the user requests broader research. Use [search](../search/SKILL.md) only to fill a material evidence gap when searching is within scope; give it the specific question and limits. Otherwise name the gap. Do not expand the assignment merely because a document contains links.
 
 ## Read and reconcile
 
@@ -36,4 +36,4 @@ Lead with the strongest supported answer, including a consequential qualificatio
 
 Use this structure selectively; a small packet may need only a few paragraphs. Provide a document-by-document inventory only when requested or necessary to establish coverage. Recommendations are optional and must not become attributed commitments.
 
-Recheck the central conclusion against supporting and conflicting evidence. Confirm that dates, quantities, attribution, and citation targets survived compression. Apply [tstack-write](../tstack-write/SKILL.md) to the final brief, preserving those checks and qualifications.
+Recheck the central conclusion against supporting and conflicting evidence. Confirm that dates, quantities, attribution, and citation targets survived compression. Apply [write](../write/SKILL.md) to the final brief, preserving those checks and qualifications.

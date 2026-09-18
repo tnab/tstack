@@ -1,9 +1,9 @@
 ---
-name: tstack-meeting
+name: meeting
 description: Prepare a focused meeting brief or turn meeting notes and transcripts into a concise record of decisions, actions, and unresolved questions. Use for meeting prep, agendas, recaps, and minutes; preserve who said or agreed to what.
 ---
 
-# tstack meeting
+# Meeting
 
 Read and apply the [shared principles](../../references/principles.md) first.
 
@@ -13,7 +13,7 @@ Use the requested mode: preparation or notes. Do both only when requested. Match
 
 Identify the meeting, date, purpose, audience, and available material. For notes, use the supplied transcript, recording, or contemporaneous notes. An agenda establishes intended discussion, not what happened. An invitation establishes invitees, not attendance. If no meeting record is available, request it or provide a clearly labeled notes template; never reconstruct an event from its agenda.
 
-Read only relevant background. Use [tstack-search](../tstack-search/SKILL.md) when a material context gap needs investigation within the user's scope. Keep outside context distinct from statements made in the meeting. For long records, process manageable sections and retain source locators, speaker attribution, and unresolved references across them.
+Read only relevant background. Use [search](../search/SKILL.md) when a material context gap needs investigation within the user's scope. Keep outside context distinct from statements made in the meeting. For long records, process manageable sections and retain source locators, speaker attribution, and unresolved references across them.
 
 ## Prepare
 
@@ -33,6 +33,6 @@ For each action, capture the specific outcome, recorded owner, due date, conditi
 
 ## Verify and deliver
 
-Check decisions, names, dates, quotations, and actions against their source passages. Flag material transcript gaps or conflicting notes. Use [tstack-followups](../tstack-followups/SKILL.md) if the request also requires reconciling actions across records.
+Check decisions, names, dates, quotations, and actions against their source passages. Flag material transcript gaps or conflicting notes. Use [followups](../followups/SKILL.md) if the request also requires reconciling actions across records.
 
-Finish through [tstack-write](../tstack-write/SKILL.md). Return the requested artifact. Preparing it does not authorize sending a recap, scheduling meetings, assigning work, or creating tasks.
+Finish through [write](../write/SKILL.md). Return the requested artifact. Preparing it does not authorize sending a recap, scheduling meetings, assigning work, or creating tasks.

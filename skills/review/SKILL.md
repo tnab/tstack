@@ -1,9 +1,9 @@
 ---
-name: tstack-review
-description: Review a document, memo, proposal, or plan for consequential factual, logical, numerical, and practical weaknesses. Use for critique, fact-checking, or stress-testing reasoning; use tstack-write for prose cleanup alone.
+name: review
+description: Review a document, memo, proposal, or plan for consequential factual, logical, numerical, and practical weaknesses. Use for critique, fact-checking, or stress-testing reasoning; use write for prose cleanup alone.
 ---
 
-# tstack review
+# Review
 
 First read [shared principles](../../references/principles.md). Help the author fix issues that could change a reader's understanding or decision.
 
@@ -13,7 +13,7 @@ Read the actual artifact and enough surrounding context to understand its purpos
 
 When asked only to review, leave the artifact unchanged. If a review and revision are both requested, make supported changes within that scope, preserve unresolved questions, and check the final artifact again. Reviewing does not authorize publishing comments or contacting contributors.
 
-Use supplied evidence first. Invoke [tstack search](../tstack-search/SKILL.md) only when a consequential claim requires verification and additional research is within scope. Respect a supplied-only corpus. If the underlying source is inaccessible, report the claim as unverified rather than false. A citation's presence does not prove that its source supports the assertion.
+Use supplied evidence first. Invoke [search](../search/SKILL.md) only when a consequential claim requires verification and additional research is within scope. Respect a supplied-only corpus. If the underlying source is inaccessible, report the claim as unverified rather than false. A citation's presence does not prove that its source supports the assertion.
 
 ## Check what changes the outcome
 
@@ -33,4 +33,4 @@ Lead with the overall assessment and the issues that matter most. For each subst
 
 Match urgency to consequence and confidence. Separate demonstrated defects from unresolved questions and optional suggestions. Deduplicate findings and discard criticism that depends on an implausible scenario or merely reflects your preferred approach. Do not manufacture findings to fill a quota. If no consequential defects were found, say so and name any material verification limits.
 
-Before delivery, recheck the strongest findings against the artifact and its context. Finish the prose with [tstack write](../tstack-write/SKILL.md), retaining evidence, uncertainty, and useful locators.
+Before delivery, recheck the strongest findings against the artifact and its context. Finish the prose with [write](../write/SKILL.md), retaining evidence, uncertainty, and useful locators.

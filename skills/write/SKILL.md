@@ -1,9 +1,9 @@
 ---
-name: tstack-write
+name: write
 description: Draft or edit knowledge-work prose for clarity, brevity, and a natural voice. Use for documents, meeting summaries, slide copy, briefs, and research answers, especially requests to tighten writing, remove filler, or remove AI tells.
 ---
 
-# tstack write
+# Write
 
 Read and apply the [shared principles](../../references/principles.md) before working. This skill supplies the final writing pass; do not invoke it recursively.
 
