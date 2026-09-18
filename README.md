@@ -1,4 +1,4 @@
-# tstack
+# tstack (aka tometo stack, aka talal stack)
 
 Open-source skills for knowledge work, designed for use across AI agents. Find answers across code and work documents, then turn that research into clear, concise writing.
 
