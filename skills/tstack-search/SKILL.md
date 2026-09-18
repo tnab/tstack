@@ -5,6 +5,8 @@ description: Find documents or answer work questions across available code, Noti
 
 # tstack search
 
+Read and apply the [shared principles](../../references/principles.md) before working.
+
 Answer the question from the record. Separate what the sources establish from your interpretation. A short answer with a named gap is better than a complete-looking guess.
 
 ## Scope and source selection

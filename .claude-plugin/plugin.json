@@ -1,7 +1,7 @@
 {
   "name": "tstack",
-  "version": "0.1.0-alpha.1",
-  "description": "Find answers across work sources and write concise, grounded prose.",
+  "version": "0.2.0-alpha.1",
+  "description": "Portable skills for research, briefs, meetings, follow-ups, decisions, review, and clear writing.",
   "author": {
     "name": "tnab",
     "url": "https://github.com/tnab"

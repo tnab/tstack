@@ -1,6 +1,6 @@
 # Pstack attribution
 
-The search and writing instructions in this plugin adapt patterns from [pstack](https://github.com/cursor/plugins/tree/main/pstack), especially `why`, its epistemics and source references, `unslop`, and `technical-writing`.
+The shared principles and skill instructions in this plugin adapt patterns from [pstack](https://github.com/cursor/plugins/tree/main/pstack), especially `why`, its epistemics and source references, `unslop`, `technical-writing`, `recall`, `interrogate`, and the principles listed in [sources and adaptations](references/sources.md).
 
 Upstream commit: `e31650eea443aaea1e84cc15d88c13f40080b275`.
 

@@ -5,6 +5,8 @@ description: Draft or edit knowledge-work prose for clarity, brevity, and a natu
 
 # tstack write
 
+Read and apply the [shared principles](../../references/principles.md) before working. This skill supplies the final writing pass; do not invoke it recursively.
+
 Write something the intended reader can understand on the first pass. Preserve the author's meaning and the evidence behind it.
 
 ## Write for the reader

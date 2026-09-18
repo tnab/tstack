@@ -1,7 +1,7 @@
 {
   "name": "tstack",
-  "version": "0.1.0-alpha.1",
-  "description": "Find answers across work sources and write concise, grounded prose.",
+  "version": "0.2.0-alpha.1",
+  "description": "Portable skills for research, briefs, meetings, follow-ups, decisions, review, and clear writing.",
   "author": {
     "name": "tnab",
     "url": "https://github.com/tnab"
@@ -9,14 +9,15 @@
   "skills": "./skills/",
   "interface": {
     "displayName": "tstack",
-    "shortDescription": "Search work sources and write clearly.",
-    "longDescription": "Two starter skills for cited research and direct writing. Uses available tools and connected sources; includes no accounts or credentials.",
+    "shortDescription": "Research, decisions, meetings, and clear writing.",
+    "longDescription": "Eight skills with shared principles for evidence, concise writing, and verification. Uses the tools and connected sources available in your agent.",
     "developerName": "tnab",
     "category": "Productivity",
     "capabilities": [],
     "defaultPrompt": [
-      "Use $tstack-search to find the decision and its rationale.",
-      "Use $tstack-write to tighten this draft without changing its meaning."
+      "Use $tstack-brief to synthesize this packet with sources.",
+      "Use $tstack-meeting to capture decisions and actions.",
+      "Use $tstack-review to check this memo against its evidence."
     ]
   },
   "repository": "https://github.com/tnab/tstack",

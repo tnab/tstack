@@ -2,11 +2,11 @@
 
 Open-source skills for knowledge work, designed for use across AI agents. Find answers across code and work documents, then turn that research into clear, concise writing.
 
-**Work in progress. This is an early iteration.** We are starting with search and writing, testing them on real work, and adding capabilities as we learn what is useful.
+**Work in progress. This is an early iteration.** Eight skills cover research, synthesis, meetings, follow-ups, decisions, review, and writing. We are testing these workflows and refining them through use.
 
 ## Credit to Lauren and pstack
 
-tstack draws heavily from [Lauren Tan](https://github.com/poteto)'s [pstack](https://github.com/cursor/plugins/tree/main/pstack). Much of this first version's search and writing guidance adapts her work. Thank you, Lauren, for publishing it and making it available to build on.
+tstack draws heavily from [Lauren Tan](https://github.com/poteto)'s [pstack](https://github.com/cursor/plugins/tree/main/pstack). The search, writing, review, catch-up, and shared principles adapt substantial parts of her approach. Thank you, Lauren, for publishing it and making it available to build on.
 
 The main foundations are:
 
@@ -24,8 +24,18 @@ The upstream revision and Lauren's MIT copyright notice are recorded in [THIRD_P
 |---|---|
 | [tstack-search](skills/tstack-search/SKILL.md) | Find documents, reconstruct decisions, check current plans, and answer questions across available sources. Return evidence, relevant gaps, and unresolved follow-ups. |
 | [tstack-write](skills/tstack-write/SKILL.md) | Draft or edit prose to be direct, succinct, and natural. Remove AI tells without changing facts, uncertainty, attribution, or commitments. |
+| [tstack-brief](skills/tstack-brief/SKILL.md) | Synthesize a document packet into a sourced brief, preserving disagreements and coverage limits. |
+| [tstack-review](skills/tstack-review/SKILL.md) | Find consequential factual, logical, numerical, and practical problems in a document or plan. |
+| [tstack-meeting](skills/tstack-meeting/SKILL.md) | Prepare a focused meeting or produce notes that distinguish discussion, decisions, and commitments. |
+| [tstack-followups](skills/tstack-followups/SKILL.md) | Reconcile outstanding actions, owners, dates, blockers, and completion evidence across records. |
+| [tstack-decide](skills/tstack-decide/SKILL.md) | Compare credible options and write a recommendation or an accurate decision record. |
+| [tstack-catchup](skills/tstack-catchup/SKILL.md) | Reconstruct current state and meaningful changes since a prior update. |
 
-Search applies the writing pass before delivery. That shared writing standard is intended to carry into future skills for documents, meeting notes, and slides. It is an instruction-based review, not a global output filter.
+Every skill explicitly loads the [shared principles](references/principles.md). Output-producing workflows finish through the writing skill. These instructions guide the agent; they are not a global output filter.
+
+Choose the skill by the result you need. Search retrieves evidence; brief synthesizes it; catch-up emphasizes changes over time; decide makes a recommendation; review challenges an existing artifact. Meeting handles one meeting, while follow-ups reconciles commitments across records. Skills call each other only when the task needs it.
+
+The [source notes](references/sources.md) document the pstack adaptations and additional practice guides.
 
 The skills use the tools and accounts available in the agent's environment. They do not include connectors, credentials, or a search index. Searching Slack, Notion, Drive, or other private sources requires access through your configured tools.
 
@@ -42,13 +52,19 @@ git clone https://github.com/tnab/tstack.git
 cd tstack
 ```
 
-Ask your agent to read and follow `skills/tstack-search/SKILL.md` or `skills/tstack-write/SKILL.md`, or install them through its supported skill workflow. Keep both skill directories together: search references the writing skill.
+Ask your agent to read and follow `skills/tstack-search/SKILL.md` or `skills/tstack-write/SKILL.md`, or install them through its supported skill workflow. Keep the full `skills/` and `references/` directories together. The skills share principles and refer to one another; copying a single `SKILL.md` omits dependencies.
 
 Example requests after loading the relevant skill:
 
 ```text
 Use tstack-search to find why we chose this approach, with sources.
 Use tstack-search to find the current plan and unresolved follow-ups.
+Use tstack-brief to summarize this packet for the operations lead, with sources.
+Use tstack-meeting to turn this transcript into decisions and actions.
+Use tstack-followups to reconcile these notes with our action register.
+Use tstack-decide to compare these options against our constraints.
+Use tstack-review to check this memo against the source material.
+Use tstack-catchup to explain what changed since my last update.
 Use tstack-write to tighten this memo while preserving its facts and caveats.
 ```
 
@@ -79,13 +95,19 @@ See the [Claude Code plugin reference](https://code.claude.com/docs/en/plugins-r
 
 Use the client's supported plugin or skill installation flow, or load the skill files directly. The Codex manifest is at `.codex-plugin/plugin.json`; the portable manifest is at `plugin.json`. All clients share the same `skills/` content.
 
-## What comes next
+## Check and improve the skills
 
-First, test search against real questions: a known document, a past decision, a current plan, conflicting sources, and missing evidence. Check the evidence and usefulness of each answer, then refine the instructions.
+Run the structural checks with Python 3.9 or later:
 
-After that, expand into reading and synthesizing large document sets, meeting notes, follow-up extraction, documents, and slides. These are directions for iteration; the repository currently contains only the two starter skills.
+```sh
+python3 scripts/validate.py
+```
 
-The initial draft passed skill and Codex manifest format checks. One synthetic exercise checked conflicting plans, an unavailable source, and a completed follow-up. Live connector behavior and installation across clients still need verification through use.
+The [behavioral exercises](evals/README.md) cover conflicting evidence, historical cutoffs, declined assignments, completed work, numerical errors, and infeasible choices. All fixtures are synthetic. Evaluate decisions and evidence rather than requiring identical wording.
+
+The [initial results](evals/results-2026-09-18.md) record seven passing scenarios and a repeated follow-up reconciliation, with the limits of that testing.
+
+The next iteration should come from real usage: whether the right sources were found, the reasoning holds, and the result is useful to its reader. Live connector behavior and installation across clients need verification in those environments. Slides are outside this release.
 
 ## License
 
