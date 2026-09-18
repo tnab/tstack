@@ -1,0 +1,18 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "tstack",
+  "version": "0.1.0-alpha.1",
+  "description": "Find answers across work sources and write concise, grounded prose.",
+  "author": {
+    "name": "tnab",
+    "url": "https://github.com/tnab"
+  },
+  "repository": "https://github.com/tnab/tstack",
+  "license": "MIT",
+  "keywords": [
+    "knowledge-work",
+    "search",
+    "writing",
+    "research"
+  ]
+}

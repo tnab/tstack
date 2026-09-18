@@ -1,0 +1,24 @@
+{
+  "name": "tstack",
+  "version": "0.1.0-alpha.1",
+  "description": "Find answers across work sources and write concise, grounded prose.",
+  "author": {
+    "name": "tnab",
+    "url": "https://github.com/tnab"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "tstack",
+    "shortDescription": "Search work sources and write clearly.",
+    "longDescription": "Two starter skills for cited research and direct writing. Uses available tools and connected sources; includes no accounts or credentials.",
+    "developerName": "tnab",
+    "category": "Productivity",
+    "capabilities": [],
+    "defaultPrompt": [
+      "Use $tstack-search to find the decision and its rationale.",
+      "Use $tstack-write to tighten this draft without changing its meaning."
+    ]
+  },
+  "repository": "https://github.com/tnab/tstack",
+  "license": "MIT"
+}
