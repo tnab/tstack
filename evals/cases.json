@@ -2,50 +2,191 @@
   {
     "id": "brief",
     "skill": "brief",
-    "fixtures": ["fixtures/orion-records.md"],
+    "fixtures": [
+      "fixtures/orion-records.md"
+    ],
     "request": "Using only these records, write a brief for the operations lead on Orion's rollout as of September 18, 2026. Cover the plan, why it was chosen, what threatens it, and what needs a decision. Keep it under 180 words and cite source IDs.",
-    "checks": ["October 1 remains approved but conditional on accessibility review", "October 8 is a proposal at the cutoff; the September 20 decision is excluded", "Partner training and support capacity explain the plan", "Pending review and date decision remain visible", "No invented consensus or claim of complete readiness"]
+    "checks": [
+      "October 1 remains approved but conditional on accessibility review",
+      "October 8 is a proposal at the cutoff; the September 20 decision is excluded",
+      "Partner training and support capacity explain the plan",
+      "Pending review and date decision remain visible",
+      "No invented consensus or claim of complete readiness"
+    ]
   },
   {
     "id": "review",
     "skill": "review",
-    "fixtures": ["fixtures/orion-records.md", "fixtures/orion-memo.md"],
+    "fixtures": [
+      "fixtures/orion-records.md",
+      "fixtures/orion-memo.md"
+    ],
     "request": "Review this memo for consequential problems using only the accompanying records. It is intended to support a rollout decision as of September 18, 2026. Give actionable findings with evidence; do not edit the memo.",
-    "checks": ["Flags false approval and false clearance claims", "Flags wrong checklist ownership or completion", "Corrects 12 of 40 to 30 percent and 12 to 18 to a 50 percent relative increase", "Does not confuse the 30 percentage point increase in success rate with relative growth", "Rejects universal customer and causal claims not established by the sample", "Memo remains unchanged"]
+    "checks": [
+      "Flags false approval and false clearance claims",
+      "Flags wrong checklist ownership or completion",
+      "Corrects 12 of 40 to 30 percent and 12 to 18 to a 50 percent relative increase",
+      "Does not confuse the 30 percentage point increase in success rate with relative growth",
+      "Rejects universal customer and causal claims not established by the sample",
+      "Memo remains unchanged"
+    ]
   },
   {
     "id": "meeting-notes",
     "skill": "meeting",
-    "fixtures": ["fixtures/orion-records.md"],
+    "fixtures": [
+      "fixtures/orion-records.md"
+    ],
     "request": "Turn only the September 15 transcript in S3 into meeting notes. Capture decisions, actions, and unresolved questions as recorded in that meeting. Cite timestamps. Do not incorporate later updates.",
-    "checks": ["No agreement to move to October 8", "Sam owns writing the checklist by September 18", "Jordan's review offer is distinct from the declined writing request", "Lee's accepted review is conditional on receipt, with no due date", "Does not mark Sam's task complete using a later update"]
+    "checks": [
+      "No agreement to move to October 8",
+      "Sam owns writing the checklist by September 18",
+      "Jordan's review offer is distinct from the declined writing request",
+      "Lee's accepted review is conditional on receipt, with no due date",
+      "Does not mark Sam's task complete using a later update"
+    ]
   },
   {
     "id": "meeting-prep",
     "skill": "meeting",
-    "fixtures": ["fixtures/orion-records.md"],
+    "fixtures": [
+      "fixtures/orion-records.md"
+    ],
     "request": "Prepare a 20-minute September 19 discussion for Noor to decide what to do about Orion's rollout. Use only evidence available through September 18. Give a short pre-read and focused agenda. Do not schedule or send anything.",
-    "checks": ["Names the decision or intended outcome", "Includes relevant prerequisites, uncertainty, and the decision owner", "Agenda fits twenty minutes without fabricated participants or outcomes", "Does not use S7 as known evidence", "No scheduling or messages"]
+    "checks": [
+      "Names the decision or intended outcome",
+      "Includes relevant prerequisites, uncertainty, and the decision owner",
+      "Agenda fits twenty minutes without fabricated participants or outcomes",
+      "Does not use S7 as known evidence",
+      "No scheduling or messages"
+    ]
   },
   {
     "id": "followups",
     "skill": "followups",
-    "fixtures": ["fixtures/orion-records.md"],
+    "fixtures": [
+      "fixtures/orion-records.md"
+    ],
     "request": "Reconcile the existing action register S6 against records available as of September 18, 2026. Return an updated register as a draft for review, preserving existing IDs, with a brief explanation of corrections and remaining open work. Do not update any live tracker.",
-    "checks": ["O-1 is completed from S4", "O-2 is identified as an erroneous assignment rather than a second writing commitment", "O-3 remains blocked with its dependency and no invented deadline", "O-4 remains pending rather than using the later S7 decision", "Any Jordan review offer stays distinct from a committed assignment", "A second reconciliation preserves IDs and creates no duplicate actions", "No external mutation"]
+    "checks": [
+      "O-1 is completed from S4",
+      "O-2 is identified as an erroneous assignment rather than a second writing commitment",
+      "O-3 remains blocked with its dependency and no invented deadline",
+      "O-4 remains pending rather than using the later S7 decision",
+      "Any Jordan review offer stays distinct from a committed assignment",
+      "A second reconciliation preserves IDs and creates no duplicate actions",
+      "No external mutation"
+    ]
   },
   {
     "id": "decide",
     "skill": "decide",
-    "fixtures": ["fixtures/decision-options.md"],
+    "fixtures": [
+      "fixtures/decision-options.md"
+    ],
     "request": "Recommend which option we should choose for the audit-export workflow using only these facts. Write a short decision memo for Rowan. Explain the tradeoffs and the next step.",
-    "checks": ["Recognizes no option meets all hard constraints", "Does not recommend immediate purchase of an infeasible option as if approved", "Distinguishes Casey's recommendation from Rowan's authority", "Does not invent discounts, implementation estimates, or numerical weights", "Names evidence or an authorized constraint change needed for a feasible decision"]
+    "checks": [
+      "Recognizes no option meets all hard constraints",
+      "Does not recommend immediate purchase of an infeasible option as if approved",
+      "Distinguishes Casey's recommendation from Rowan's authority",
+      "Does not invent discounts, implementation estimates, or numerical weights",
+      "Names evidence or an authorized constraint change needed for a feasible decision"
+    ]
   },
   {
     "id": "catchup",
     "skill": "catchup",
-    "fixtures": ["fixtures/orion-records.md"],
+    "fixtures": [
+      "fixtures/orion-records.md"
+    ],
     "request": "I last read the approved plan on September 10. Catch me up on Orion as of September 18, 2026, using only this packet. What changed, what is still open, and what should I do next? Keep it brief and cite source IDs.",
-    "checks": ["Uses September 10 as baseline and September 18 as cutoff", "Distinguishes proposed date change from approved current plan", "Reports completed checklist and blocked review", "Does not treat S7 as current or invent private chat history", "Offers a concrete next step without presenting it as an existing commitment"]
+    "checks": [
+      "Uses September 10 as baseline and September 18 as cutoff",
+      "Distinguishes proposed date change from approved current plan",
+      "Reports completed checklist and blocked review",
+      "Does not treat S7 as current or invent private chat history",
+      "Offers a concrete next step without presenting it as an existing commitment"
+    ]
+  },
+  {
+    "id": "router-meeting-prep",
+    "skill": "kstack",
+    "fixtures": [
+      "fixtures/orion-records.md"
+    ],
+    "request": "I’m chairing a 20-minute Orion rollout discussion with Noor on September 19, 2026. Using this packet as it stood through September 18, get me ready: a short pre-read, an agenda, and the questions that will help us resolve what is still open. Keep it compact.",
+    "checks": [
+      "Uses the meeting-prep playbook and relevant component instructions, with work sized to the requested preparation",
+      "Distinguishes the approved conditional October 1 plan from the proposed October 8 date and excludes S7 at the cutoff",
+      "Connects the pending accessibility report to the blocked review and the remaining date decision",
+      "Provides an agenda that fits twenty minutes and questions directed at missing evidence or a real decision",
+      "Does not invent attendees, consensus, completed reviews, messages, or scheduled events",
+      "Works from the supplied packet without searching live services"
+    ]
+  },
+  {
+    "id": "router-wording-edit",
+    "skill": "kstack",
+    "fixtures": [
+      "fixtures/rollout-update.md"
+    ],
+    "request": "Tighten this paragraph for a team update. Keep the facts, qualifications, and source markers intact. Return just the edited paragraph.",
+    "checks": [
+      "Routes directly to the writing component or an equally short document workflow; does not impose a research, briefing, and review pipeline",
+      "Removes redundant introduction and filler without adding claims",
+      "Preserves the as-of date, conditional approval, completed checklist, and blocked review dependency",
+      "Preserves 12 of 40, the convenience-sample limitation, and the source markers attached to their claims",
+      "Returns only the edited paragraph without external research, unnecessary clarification, or process narration"
+    ]
+  },
+  {
+    "id": "router-source-bound-document",
+    "skill": "kstack",
+    "fixtures": [
+      "fixtures/orion-records.md",
+      "fixtures/orion-memo.md"
+    ],
+    "request": "Replace this rollout memo with a decision-ready draft for Noor, using only the accompanying records available through September 18, 2026. The existing memo may have errors. Explain the current plan, what the pilot does and does not tell us, and what needs resolving. Keep it under 220 words and cite source IDs.",
+    "checks": [
+      "Uses the document playbook and enough evidence checking to reconcile the supplied memo with the underlying records",
+      "Treats the memo as a draft to correct, not authority for approval, clearance, ownership, or customer demand",
+      "States October 1 is still approved conditionally and October 8 is unapproved at the cutoff; excludes the later decision",
+      "Preserves the completed checklist and pending accessibility dependency",
+      "Uses correct pilot arithmetic where included and preserves sample and causality limitations",
+      "Produces a concise sourced replacement draft without making an approval decision or using outside sources"
+    ]
+  },
+  {
+    "id": "router-custom-workflow",
+    "skill": "kstack",
+    "fixtures": [
+      "fixtures/orion-records.md"
+    ],
+    "request": "Turn the Orion packet as of September 18 into a five-minute card-sorting exercise for onboarding a new coordinator. Give me three cards drawn from the records, categories for the learner to sort them into, and a separate facilitator answer key explaining the distinctions. Also draft a short note I could send Noor asking for any missing context before I use it.",
+    "checks": [
+      "Uses the custom playbook or composes an appropriate minimal workflow for the unusual deliverable instead of refusing or forcing an unrelated full pipeline",
+      "Produces three usable cards, meaningful categories, and a separate answer key grounded in source IDs",
+      "Correctly distinguishes approval, proposals, offers, commitments, or dependencies according to the cards it chooses",
+      "Excludes S7 as known information at the cutoff and does not invent missing context",
+      "Keeps the note as a draft and does not send it, create tasks, or change external records"
+    ]
+  },
+  {
+    "id": "router-authoring-evaluation",
+    "skill": "kstack",
+    "workspace": "scratch-copy",
+    "fixtures": [
+      "fixtures/handover-examples.md"
+    ],
+    "request": "In this disposable copy of Knowledge Stack, add a reusable handover skill for turning shift notes into a concise handoff: verified status, open work, dependencies, and any recorded owners or deadlines. Use the two examples to check it before calling it ready. Follow the repository conventions and report what you actually verified.",
+    "checks": [
+      "Uses the authoring-a-skill playbook and create-skill component, then the evaluate workflow or evaluate-skill component for behavioral checks",
+      "Adds a portable skill with matching metadata and directory name, shared principles, and appropriate cross-skill references",
+      "Generalizes from the examples instead of embedding their names, counts, or desired outputs in the runtime skill",
+      "Checks that an offer is not silently promoted to an accepted commitment and that missing dependencies or deadlines remain explicit",
+      "Validates the changed files and distinguishes structural validation from observed behavioral outcomes",
+      "Keeps expected checks away from the workers producing evaluated answers; honestly reports any evaluation it cannot run",
+      "Limits changes to the disposable copy and does not publish, install globally, or update live services"
+    ]
   }
 ]

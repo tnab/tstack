@@ -1,25 +1,25 @@
 {
-  "name": "tstack",
-  "version": "0.2.0-alpha.2",
-  "description": "Portable skills for research, briefs, meetings, follow-ups, decisions, review, and clear writing.",
+  "name": "kstack",
+  "version": "0.3.0-alpha.1",
+  "description": "Knowledge Stack: playbooks and skills for research, documents, writing, meetings, and decisions.",
   "author": {
     "name": "tnab",
     "url": "https://github.com/tnab"
   },
   "skills": "./skills/",
   "interface": {
-    "displayName": "tstack",
-    "shortDescription": "Research, decisions, meetings, and clear writing.",
-    "longDescription": "Eight skills with shared principles for evidence, concise writing, and verification. Uses the tools and connected sources available in your agent.",
+    "displayName": "Knowledge Stack",
+    "shortDescription": "Playbooks for research, documents, and clear writing.",
+    "longDescription": "Start with kstack. Knowledge Stack routes non-coding work through focused playbooks and reusable skills, with shared standards for evidence, concise writing, and verification.",
     "developerName": "tnab",
     "category": "Productivity",
     "capabilities": [],
     "defaultPrompt": [
-      "Use $brief to synthesize this packet with sources.",
-      "Use $meeting to capture decisions and actions.",
-      "Use $review to check this memo against its evidence."
+      "Use $kstack to prepare me for this project review.",
+      "Use $kstack to turn this source packet into a decision memo.",
+      "Use $kstack to find the current plan and unresolved follow-ups."
     ]
   },
-  "repository": "https://github.com/tnab/tstack",
+  "repository": "https://github.com/tnab/kstack",
   "license": "MIT"
 }

@@ -1,8 +1,11 @@
 # Pstack attribution
 
-The shared principles and skill instructions in this plugin adapt patterns from [pstack](https://github.com/cursor/plugins/tree/main/pstack), especially `why`, its epistemics and source references, `unslop`, `technical-writing`, `recall`, `interrogate`, and the principles listed in [sources and adaptations](references/sources.md).
+Knowledge Stack substantially adapts the architecture, playbooks, shared principles, and skill instructions of [Lauren Tan's pstack](https://github.com/cursor/plugins/tree/main/pstack). This includes `poteto-mode`, its authoring and evaluation playbooks, `why`, its epistemics and source references, `unslop`, `technical-writing`, `recall`, `interrogate`, and the principles listed in [sources and adaptations](references/sources.md).
 
-Upstream commit: `e31650eea443aaea1e84cc15d88c13f40080b275`.
+Upstream revisions:
+
+- `e31650eea443aaea1e84cc15d88c13f40080b275` for the initial individual skills and shared principles.
+- `53e579f1481697931fc44f5445171397cfa2b24b` for the main mode, playbook architecture, and authoring and evaluation workflows.
 
 The following notice applies to the upstream material:
 

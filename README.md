@@ -1,72 +1,67 @@
-# tstack (aka tometo stack, aka talal stack)
+# Knowledge Stack
 
-Open-source skills for knowledge work, designed for use across AI agents. Find answers across code and work documents, then turn that research into clear, concise writing.
+**Knowledge Stack (`kstack`) is a set of skills optimized for non-coding work.** Use it to research a question, create a document, prepare a meeting, reconcile follow-ups, or turn a pile of sources into clear writing.
 
-**Work in progress. This is an early iteration.** Eight skills cover research, synthesis, meetings, follow-ups, decisions, review, and writing. We are testing these workflows and refining them through use.
+Start with `/kstack` and describe the result you need. It selects a playbook, calls the relevant skills, checks the result, and keeps the writing direct. You can also call any skill individually.
 
-## Credit to Lauren and pstack
+```text
+/kstack Find why we chose this approach, and whether that decision still stands.
+/kstack Prepare me for tomorrow's project review using these notes and documents.
+/kstack Turn this research into a one-page recommendation for the operations lead.
+/kstack Reconcile this meeting transcript with our existing action register.
+/kstack Tighten this memo without losing its caveats.
+```
 
-tstack draws heavily from [Lauren Tan](https://github.com/poteto)'s [pstack](https://github.com/cursor/plugins/tree/main/pstack). The search, writing, review, catch-up, and shared principles adapt substantial parts of her approach. Thank you, Lauren, for publishing it and making it available to build on.
+`/kstack` is shorthand for invoking the main skill. Exact command syntax and discovery depend on the agent and plugin client. You can always ask your agent to read and follow [skills/kstack/SKILL.md](skills/kstack/SKILL.md).
 
-The main foundations are:
+**Early work in progress.** The current release focuses on research, documents, writing, meetings, and decisions. Slides are part of the intended scope but are not implemented yet. The workflows need continued testing and refinement through use.
 
-- [`why`](https://github.com/cursor/plugins/blob/main/pstack/skills/why/SKILL.md) and its evidence framework: discover sources, investigate independently where useful, read the underlying record, and distinguish evidence from inference.
-- The [`Notion`](https://github.com/cursor/plugins/blob/main/pstack/skills/why/references/sources/notion.md) and [`Slack`](https://github.com/cursor/plugins/blob/main/pstack/skills/why/references/sources/slack.md) playbooks: read full context, preserve attribution, check dates and decision status, and report gaps.
-- [`unslop`](https://github.com/cursor/plugins/blob/main/pstack/skills/unslop/SKILL.md) and [`technical-writing`](https://github.com/cursor/plugins/blob/main/pstack/skills/technical-writing/SKILL.md): remove filler and formulaic language, write concretely, and keep the reader's effort low.
+## Thank you, Lauren
 
-tstack adapts those foundations for everyday knowledge work. Searches can begin with a project, question, person, or document. The depth of research follows the question. Answers stay concise while preserving sources, caveats, and unresolved disagreements.
+Knowledge Stack builds heavily on [Lauren Tan](https://github.com/poteto)'s [pstack](https://github.com/cursor/plugins/tree/main/pstack). Thank you, Lauren, for publishing the architecture and practices that make this project possible.
 
-The upstream revision and Lauren's MIT copyright notice are recorded in [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
+The adaptation is substantial. The main mode, task-specific playbooks, reusable skills, shared principles, evidence standards, concise writing, and verification approach all draw from pstack. Knowledge Stack applies that structure to knowledge work, with portable instructions and tools supplied by the user's agent environment.
 
-## What is here
+The main foundations are [Poteto Mode](https://github.com/cursor/plugins/blob/main/pstack/skills/poteto-mode/SKILL.md), its authoring and evaluation playbooks, [why](https://github.com/cursor/plugins/blob/main/pstack/skills/why/SKILL.md), [unslop](https://github.com/cursor/plugins/blob/main/pstack/skills/unslop/SKILL.md), [technical-writing](https://github.com/cursor/plugins/blob/main/pstack/skills/technical-writing/SKILL.md), and pstack's principles. [Sources and adaptations](references/sources.md) records the mapping and revisions. Lauren's full MIT notice is preserved in [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
+
+## How it works
+
+The [kstack skill](skills/kstack/SKILL.md) is the main entry point. It establishes the outcome, audience, source boundaries, and any missing information that would change the work. Then it loads the relevant [playbook](skills/kstack/playbooks/) and composes the skills needed to finish the task. A small edit stays small; a research-backed recommendation may need search, synthesis, a decision, review, and writing.
+
+Playbooks cover research, document creation, briefs, meeting preparation, meeting notes, follow-ups, decisions, catch-ups, reviews, skill authoring, and evaluation. A custom playbook handles requests that span several workflows or do not fit one. Playbooks define the sequence and completion checks; specialized skills own the detailed instructions.
 
 | Skill | Purpose |
 |---|---|
-| [search](skills/search/SKILL.md) | Find documents, reconstruct decisions, check current plans, and answer questions across available sources. Return evidence, relevant gaps, and unresolved follow-ups. |
-| [write](skills/write/SKILL.md) | Draft or edit prose to be direct, succinct, and natural. Remove AI tells without changing facts, uncertainty, attribution, or commitments. |
-| [brief](skills/brief/SKILL.md) | Synthesize a document packet into a sourced brief, preserving disagreements and coverage limits. |
-| [review](skills/review/SKILL.md) | Find consequential factual, logical, numerical, and practical problems in a document or plan. |
-| [meeting](skills/meeting/SKILL.md) | Prepare a focused meeting or produce notes that distinguish discussion, decisions, and commitments. |
-| [followups](skills/followups/SKILL.md) | Reconcile outstanding actions, owners, dates, blockers, and completion evidence across records. |
-| [decide](skills/decide/SKILL.md) | Compare credible options and write a recommendation or an accurate decision record. |
+| [kstack](skills/kstack/SKILL.md) | Route a request through the right playbook and carry it to a checked result. |
+| [search](skills/search/SKILL.md) | Find answers and reconstruct decisions across available sources. |
+| [brief](skills/brief/SKILL.md) | Synthesize a document packet into a sourced brief. |
+| [write](skills/write/SKILL.md) | Draft or edit direct, succinct prose while preserving meaning. |
+| [review](skills/review/SKILL.md) | Find consequential factual, logical, numerical, and practical problems. |
+| [meeting](skills/meeting/SKILL.md) | Prepare a focused meeting or separate discussion, decisions, and commitments in notes. |
+| [followups](skills/followups/SKILL.md) | Reconcile actions, owners, dates, blockers, and completion evidence. |
+| [decide](skills/decide/SKILL.md) | Compare credible options and produce a recommendation or decision record. |
 | [catchup](skills/catchup/SKILL.md) | Reconstruct current state and meaningful changes since a prior update. |
+| [create-skill](skills/create-skill/SKILL.md) | Create or improve a portable skill with focused instructions and validation. |
+| [evaluate-skill](skills/evaluate-skill/SKILL.md) | Check skill behavior using realistic tasks and evidence from the actual outputs. |
 
-Every skill explicitly loads the [shared principles](references/principles.md). Output-producing workflows finish through the writing skill. These instructions guide the agent; they are not a global output filter.
+All skills load the [shared principles](references/principles.md). Ground claims in evidence. Preserve uncertainty, disagreement, and history. Challenge weak premises. Match effort to the task. Verify the delivered artifact. Remove filler and formulaic language without erasing qualifications or attribution.
 
-Choose the skill by the result you need. Search retrieves evidence; brief synthesizes it; catch-up emphasizes changes over time; decide makes a recommendation; review challenges an existing artifact. Meeting handles one meeting, while follow-ups reconciles commitments across records. Skills call each other only when the task needs it.
-
-The [source notes](references/sources.md) document the pstack adaptations and additional practice guides.
-
-The skills use the tools and accounts available in the agent's environment. They do not include connectors, credentials, or a search index. Searching Slack, Notion, Drive, or other private sources requires access through your configured tools.
+These are instructions for an agent, not an executable workflow engine or a global output filter. They use available tools and accounts; they do not include connectors, credentials, or a search index. Searching code, Slack, Notion, Drive, or other sources requires configured access. Reading a source does not authorize sending messages, assigning work, or publishing its contents.
 
 ## Use it with your agent
 
-The shared skills use the [Agent Skills format](https://agentskills.io/specification). A root [Agent Plugins manifest](https://agent-plugins.org/plugin-authors/manifest) packages them for clients that support that standard. Cursor, Claude Code, and Codex manifests are included around the same skill files.
+The skills use the [Agent Skills format](https://agentskills.io/specification). A root [Agent Plugins manifest](https://agent-plugins.org/plugin-authors/manifest) packages them for clients that support that standard. Cursor, Claude Code, and Codex manifests wrap the same skill files.
 
-The instructions do not require a particular model or agent runtime. Available search tools and account access determine which sources an agent can read. Installation and automatic skill discovery vary by client; compatibility has not been verified in every agent.
+The instructions do not require a particular model or runtime. Installation, invocation syntax, automatic discovery, and available tools vary by client. Compatibility has not been verified in every agent.
 
 To inspect or use the skills directly:
 
 ```sh
-git clone https://github.com/tnab/tstack.git
-cd tstack
+git clone https://github.com/tnab/kstack.git
+cd kstack
 ```
 
-Ask your agent to read and follow `skills/search/SKILL.md` or `skills/write/SKILL.md`, or install them through its supported skill workflow. Keep the full `skills/` and `references/` directories together. The skills share principles and refer to one another; copying a single `SKILL.md` omits dependencies.
-
-Example requests after loading the relevant skill:
-
-```text
-Use the search skill to find why we chose this approach, with sources.
-Use the search skill to find the current plan and unresolved follow-ups.
-Use the brief skill to summarize this packet for the operations lead, with sources.
-Use the meeting skill to turn this transcript into decisions and actions.
-Use the followups skill to reconcile these notes with our action register.
-Use the decide skill to compare these options against our constraints.
-Use the review skill to check this memo against the source material.
-Use the catchup skill to explain what changed since my last update.
-Use the write skill to tighten this memo while preserving its facts and caveats.
-```
+Ask your agent to read and follow `skills/kstack/SKILL.md`, or install the plugin through its supported workflow. Keep the full `skills/` and `references/` directories together. Copying a single `SKILL.md` omits playbooks and shared dependencies.
 
 ### Cursor
 
@@ -74,7 +69,7 @@ For local plugin discovery, clone into Cursor's plugin directory instead:
 
 ```sh
 mkdir -p ~/.cursor/plugins/local
-git clone https://github.com/tnab/tstack.git ~/.cursor/plugins/local/tstack
+git clone https://github.com/tnab/kstack.git ~/.cursor/plugins/local/kstack
 ```
 
 Restart Cursor or run **Developer: Reload Window**, then check **Customize**. See [Cursor's local plugin workflow](https://cursor.com/docs/plugins#test-plugins-locally). Team settings may restrict local imports.
@@ -97,17 +92,24 @@ Use the client's supported plugin or skill installation flow, or load the skill 
 
 ## Check and improve the skills
 
-Run the structural checks with Python 3.9 or later:
+Use the authoring and evaluation playbooks through the main skill:
+
+```text
+/kstack Create a skill for turning a research packet into a customer briefing.
+/kstack Evaluate whether this skill preserves conflicting evidence and unknown owners.
+```
+
+Run structural checks with Python 3.9 or later:
 
 ```sh
 python3 scripts/validate.py
 ```
 
-The [behavioral exercises](evals/README.md) cover conflicting evidence, historical cutoffs, declined assignments, completed work, numerical errors, and infeasible choices. All fixtures are synthetic. Evaluate decisions and evidence rather than requiring identical wording.
+The [behavioral exercises](evals/README.md) use synthetic material to check evidence handling and workflow behavior. Evaluate decisions and evidence rather than requiring identical wording. The [initial results](evals/results-2026-09-18.md) document tests of the earlier individual skills; they do not establish that every playbook or client works.
 
-The [initial results](evals/results-2026-09-18.md) record seven passing scenarios and a repeated follow-up reconciliation, with the limits of that testing.
+The [entry-workflow results](evals/results-2026-09-22.md) cover five synthetic requests through `kstack`, including skill authoring, plus a separate run of the authored skill. Structural checks passed. A Cursor CLI smoke test stopped at authentication, so Cursor runtime verification is still open.
 
-The next iteration should come from real usage: whether the right sources were found, the reasoning holds, and the result is useful to its reader. Live connector behavior and installation across clients need verification in those environments. Slides are outside this release.
+Improve the workflows from observed failures: whether the right sources were found, the reasoning holds, and the result helps its reader. Live connector behavior and installation across clients need verification in those environments.
 
 ## License
 

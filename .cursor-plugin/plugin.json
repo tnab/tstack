@@ -1,12 +1,12 @@
 {
-  "name": "tstack",
-  "version": "0.2.0-alpha.2",
-  "description": "Portable skills for research, briefs, meetings, follow-ups, decisions, review, and clear writing.",
+  "name": "kstack",
+  "version": "0.3.0-alpha.1",
+  "description": "Knowledge Stack: playbooks and skills for research, documents, writing, meetings, and decisions.",
   "author": {
     "name": "tnab",
     "url": "https://github.com/tnab"
   },
-  "repository": "https://github.com/tnab/tstack",
+  "repository": "https://github.com/tnab/kstack",
   "license": "MIT",
   "keywords": [
     "knowledge-work",
